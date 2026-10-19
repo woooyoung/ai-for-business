@@ -173,6 +173,8 @@
   .two > div { min-width: 0; display: flex; flex-direction: column; gap: 18px; }
   .about-list, .steps { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 16px; }
   .about-list li { padding-left: 16px; border-left: 2px solid var(--line); }
+  .about-group { display: flex; flex-direction: column; gap: 10px; }
+  .about-group h3 { font-size: 17px; }
   .steps { counter-reset: s; gap: 16px; }
   .steps li { counter-increment: s; display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start; }
   .steps li::before {
@@ -331,13 +333,28 @@
     <div>
       <p class="eyebrow">만드는 사람</p>
       <h2>최우영</h2>
-      <ul class="about-list">
-        <li>국비 지원 개발자 부트캠프 IT 강사, 5년 이상</li>
-        <li>LLM·RAG, Java·Spring, JavaScript 강의</li>
-        <li>JavaScript 교재 공저</li>
-        <li>위 매장 체인의 CRM과 고객 앱을 직접 개발하고 운영 중</li>
-        <li>유튜브 <a href="https://www.youtube.com/@barbelloper" target="_blank" rel="noopener">@barbelloper</a>: RAG, Claude 에이전트 활용 강의</li>
-      </ul>
+      <div class="about-group">
+        <h3>회사 시스템을 직접 만들고 운영합니다</h3>
+        <ul class="about-list">
+          <li>위 매장 체인의 CRM, 인트라넷, 고객용 iOS·Android 앱을 직접 개발하고 오픈 이후 계속 운영</li>
+          <li>백엔드부터 화면, 모바일 앱까지 혼자 끝까지 만드는 풀스택 개발</li>
+        </ul>
+      </div>
+      <div class="about-group">
+        <h3>AI를 실제 문제에 써 왔습니다</h3>
+        <ul class="about-list">
+          <li>대학·공공기관과 함께한 AI 산학협력 프로젝트 다수</li>
+          <li>산업 현장 검사 장비 자동화 사업 참여</li>
+        </ul>
+      </div>
+      <div class="about-group">
+        <h3>AI를 가르칩니다</h3>
+        <ul class="about-list">
+          <li>IT 교육기관 학과장 (2021년~), 설립 때부터 전 과정 커리큘럼 총괄</li>
+          <li>바이브코딩·AI 풀스택, 데이터 사이언스, 클라우드 과정 설계</li>
+          <li>JavaScript 교재 공저 · 유튜브 <a href="https://www.youtube.com/@barbelloper" target="_blank" rel="noopener">@barbelloper</a> (RAG, Claude 에이전트 강의)</li>
+        </ul>
+      </div>
     </div>
     <div>
       <p class="eyebrow">진행 방식</p>
